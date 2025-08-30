@@ -1,0 +1,2 @@
+# Hub-and-Spoke-Network-with-Transitivity-through-VPN-gateway---Terraform-Code
+Terraform code, that provisions 6 Virtual networks, among which one Virtual Network is common (peered with every vnet). This Common virtual network is connected to a VPN Gatway. This VPN Gateway acts like a router in order to route traffic between the 5 different virtual networks which are peered to the common Virtual Network enabling transitivity.
