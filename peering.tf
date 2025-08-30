@@ -11,7 +11,7 @@ locals {
 
 
 resource "azurerm_virtual_network_peering" "spokes" {
-
+  depends_on                = [azurerm_virtual_network_gateway.hub_vpn_gw]
   for_each                  = local.spokes
   name                      = "${each.key}-to-hub-connection"
   resource_group_name       = azurerm_resource_group.rg.name
